@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val recyclerView = findViewById<View>(R.id.recyclerView) as RecyclerView
-        dataLists = DataList.createContactList(20)
+        dataLists = DataList.createUsersList(20)
         val adapter = ListAdapter(dataLists)
 
         recyclerView.adapter = adapter

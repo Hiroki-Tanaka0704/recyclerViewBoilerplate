@@ -6,16 +6,16 @@ class DataList (val name: String) {
 
         private var lastUserId = 0
 
-        fun createContactList(userCounts: Int) : ArrayList<DataList> {
-            val contacts = ArrayList<DataList>()
+        fun createUsersList(userCounts: Int) : ArrayList<DataList> {
+            val users = ArrayList<DataList>()
             for (i in 1..userCounts) {
-                contacts.add(
+                users.add(
                     DataList(
                         "User" + ++lastUserId
                     )
                 )
             }
-            return contacts
+            return users
         }
 
     }
